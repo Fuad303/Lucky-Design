@@ -1,0 +1,105 @@
+.melumat{
+    display: flex;
+    margin-bottom: 50px;;
+}
+@media(max-width: 991px){
+    .melumat{
+        display: block;
+    }
+}
+.melumatlar__input{
+    width: 100%;
+}
+.melumatlar__input input{
+    width: 95%;
+    height: 55px;
+    border-radius: 8px;
+    border-style: none;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.complete__section{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+.odeme{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+    padding: 18px;
+    font-size: 17px;
+}
+.info{
+  margin: 20px 0;
+  font-size: 18px;
+  color: rgb(13, 202, 240);
+}
+.complete__button button{
+    background-color: #fc8410;
+    border: none;
+    color: #FFFF;
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+}
+.complete__button button:hover{
+    background-color: #106853;
+}
+.ferdi__filter{
+    height: 50px;
+    background-color: #f8f8f8;
+    padding-top: 12px;
+}
+.ferdi__filter:focus{
+    background-color: #106853;
+    color: #FFFF;
+}
+.filter2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    height: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.filter2 select{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #106853;
+    width: 50%;
+    height: 32px;
+    padding: 5px;
+}
+@media (max-width: 991px){
+  .filter2{
+    display: block;
+    gap: 15px;
+  }
+  .filter2 select{
+    margin-bottom: 15px;
+  }
+}
+.all__product thead{
+    background-color: #f8f8f8;
+}
+.status{
+    background-color: #fc8410;
+    border-radius: 15px;
+    color: #FFFF;
+    padding: 5px 8px;
+}
+.tekrar__sifaris{
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid rgba(128, 128, 128, 0.353);
+    height: 50px;
+    padding: 0 19px;
+    border-radius: 7px;
+}
+.tekrar__sifaris:hover{
+    background-color: #106853;
+    color: #FFFF;
+}

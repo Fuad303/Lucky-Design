@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18fe446eba.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ofis-levazimatlari.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- End of owl carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Lucky | Qida və içkilər</title>
+</head>
+<body>
+    <div class="nav">
+    <div class="container">
+        <div class="header__top d-flex justify-content-end col-xl-12">
+            <ul>
+                <li><a href="./daxil-ol.html">Daxil ol</a></li>
+                <li><a href="./qeydiyyat.html">Qeydiyyat</a></li>
+            </ul>
+        </div>
+        <div class="header__middle d-flex justify-content-space-between">
+            <div class="nav__logo col-sm-12 col-md-3 col-lg-3"><a href="./index.html"><img src="./public/images/logo/logo-header.svg" alt=""></a></div>
+            <div class="nav__search xs-sm-md-hidden col-md-6 col-lg-6 d-flex align-items-center">
+                <form action="">
+                <div class="search__box d-flex justify-content-center align-items-center position-relative">
+                    <input type="search" name="" id="" placeholder="Axtar">
+                    <span class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                </form>
+            </div>
+            <div class="nav__icon col-lg-3 col-md-3 xs-sm-md-hidden d-flex align-items-center">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="./sexsi-kabinet.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a class="notification" href="./sebet.html"><img src="./public/images/general/cart.svg" alt=""><span class="badge">0</span></a></li>
+                    <li><a class="notification" href="./istek-sayisi.html"><img src="./public/images/general/heart.svg" alt=""><span class="badge">0</span></a></li>
+                </ul>
+            </div>           
+        </div>
+        <div class="header__bottom d-flex">
+        <div class="category dropdown col-md-4 xl-4 sm-12">
+            <div class="category__list col-sm-12 col-md-12 dropbtn"><img src="./public/images/icon/category.svg" alt="">Kateqoriyalar</div>
+            <div class="category__menu dropdown-content">
+                <ul class="main__list">
+                    <li class="ofis"><a href="./ofis-levazimatlari.html"><img src="./public/CatImgs/1617785889ofis-levezimatlari.svg" alt="Ofis levazimatlari">Ofis ləvazimatları</a></li>
+                    <li class="qida"><a href="./qida-ve-ickiler.html"><img src="./public/CatImgs/1617786311qida.png" alt="Qida">Qida və İçkilər</a></li>
+                    <li class="teserrufat"><a href="./teserrufat-mallari.html"><img src="./public/CatImgs/1617786118xirdavat.png" alt="Xirdavat"> Təsərrüfat malları</a></li>
+                    <li class="elektron"><a href="./elektron-avadanliq.html"><img src="./public/CatImgs/1617786259computer-accessories-512.webp" alt=""> Elektron avadanlıq</a></li>
+                    <li class="dibcek"><a href="./dibcek-guller.html"><img src="./public/CatImgs/16468163995165161.png" alt="Dibcek">Dibçək gülləri</a></li>
+                    <li class="hediyye"><a href="./hediyyelik.html"><img src="./public/CatImgs/1618572764fbdfbdf.jpg" alt="Hediyye">Hədiyyəlik</a></li>
+                    <li class="coffee"><a href="./coffeeshop.html"><img src="./public/CatImgs/162151268599956.png" alt="Koffee">Coffee shop</a></li>
+                </ul>
+           </div>
+        </div>
+        <div class="nav__menu d-flex col-md-8">
+            <div class="nav__item"><a href="./haqqimizda.html">Haqqımızda</a></div>
+            <div class="nav__item"><a href="./yeni.html">Yeni</a></div>
+            <div class="nav__item"><a href="./endirimler.html">Endirimlər</a></div>
+            <div class="nav__item"><a href="./en-cox-satilanlar.html">Ən çox satılanlar</a></div>
+            <div class="nav__item dropdown"><button>Şərtlər<img src="./public/images/icon/arrow-right.svg" alt=""></button>
+            <div class="dropdown-content">
+                <a href="./catdirilma.html">Çatdırılma</a>
+                <a href="./geri-qaytarilma.html">Geri qaytarılma</a>
+            </div>
+        </div>
+            <div class="nav__item"><a href="./elaqe.html">Əlaqə</a></div>
+        </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-container"> 
+            <div class="topnav">
+                <div class="mobile__nav__icons d-flex">
+            <a class="active"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars d-flex"></i> 
+              </a></a>
+              <div class="mobile__nav__icon">
+                <ul class="d-flex">
+                    <li><a class="mobile__notification" href="#"><img src="./public/images/general/cart.svg" alt=""><span class="mobile__badge">0</span></a></li>
+                    <li><a class="mobile__notification" href="#"><img src="./public/images/general/heart.svg" alt=""><span class="mobile__badge">0</span></a></li>
+                </ul>
+            </div>
+            </div>
+            <div id="myLinks">
+                <hr style="color: white;">
+                <div class="mobile__search"><form action="">
+                    <div class="mobile__search__box d-flex justify-content-center align-items-center position-relative">
+                        <input type="search" name="" id="" placeholder="Axtar">
+                        <span class="mobile__search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    </form>
+                </div>
+              <ul>
+                <li><a href="./haqqimizda.html">Haqqımızda</a></li>
+                <li><a href="./yeni.html">Yeni</a></li>
+                <li><a href="./endirimler.html">Endirimlər</a></li>
+                <li><a href="./en-cox-satilanlar.html">Ən çox satılanlar</a></li>
+                <li><a href="#">Şərtlər</a></li>
+                <li><a href="./elaqe.html">Əlaqə</a></li>
+            </ul>
+            </div>
+          </div>
+        </div> 
+    </div> 
+    </div>
+    <!-- Mobile Category -->
+    <div class="mobile__category__menu">
+        <a class="active">
+            <a href="javascript:void(0);" class="icon" onclick="myCategoryFunction()">
+                <img src="./public/images/icon/category.svg" alt="">Kateqoriyalar
+            </a>
+        </a> <hr style="color: #FFFF;">
+    <div id="mobile__category">
+        <ul>
+            <li class="ofis"><a href="./ofis-levazimatlari.html">Ofis ləvazimatları<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="qida"><a href="#">Qida və İçkilər<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="teserrufat"><a href="#">Təsərrüfat malları<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="elektron"><a href="#">Elektron avadanlıq<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="dibcek"><a href="#">Dibçək gülləri<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="hediyye"><a href="#">Hədiyyəlik<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+                    <li class="coffee"><a href="#">Coffee shop<img src="./public/images/icon/arrow-right.svg" alt=""></a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="office__page">
+    <div class="title"><h3>Qida və içkilər</h3></div>
+    <div class="container office__page__container"> 
+        <button class="office__filter__button" onclick="filterFunctions()"><i class="fa fa-filter"></i> Filterlə</button>
+        <div id="filter__category" class="office__filter col-md-12 col-lg-4">
+            <div class="office__filter__title">Qiymət filteri</div>
+            <div class="slider">
+                <input type="range" min="0" max="500" value="100" oninput="rangeValue.innerText = this.value">
+                </div> 
+                
+                <div class="office__filter__number d-flex">
+                    <div><span>0</span><img src="./public/images/icon/manat.svg" alt="manat"></div>
+                    <div><span id="rangeValue">100</span><img src="./public/images/icon/manat.svg" alt="manat"></div>
+                </div>
+            <hr>
+            <div>
+            <div class="office__filter__title">Alt kateqoriya</div>
+            
+            <div class="office__filter__category">
+            <input type="checkbox">Çay <br>
+            <input type="checkbox">Quru meyvə <br>
+            <input type="checkbox">Qəhvə<br>
+            <input type="checkbox">Qənd <br>
+            <input type="checkbox">Şirniyyat <br>
+            <input type="checkbox">Soyuq içkilər <br>
+            <input type="checkbox">Süd<br>
+            <input type="checkbox">Un məhsulları<br>
+            <input type="checkbox">Ədviyyat<br>
+            </div>
+            <div class="filter__category__bottom">
+            <hr>
+            <input type="checkbox"> Yeni <br>
+            <input type="checkbox"> Tövsiyyə edilir <br>
+            <button>Filtrlə</button>
+            </div>
+        </div>
+    </div>
+    <div class="office__page__right col-lg-8 col-12">
+    <div class="filter2">
+        <div class="filter2__number">
+            <span>Saya görə: </span>
+            <select name="" id="">
+                <option value="">12</option>
+                <option value="">18</option>
+                <option value="">24</option>
+                <option value="">30</option>
+            </select>
+        </div>
+        <div class="filter2__price">
+            <span>Qiymətə görə: </span>
+            <select name="" id="">
+                <option value="" disabled>Seç</option>
+                <option value="">Ucuzdan Bahaya</option>
+                <option value="">Bahadan Ucuza</option>
+            </select>
+        </div>
+    </div>
+    <div class="office__page__wrapper wrapper d-flex">
+        <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                <div class="item__header">
+                   <div class="item__header__right">
+                      <button id="hide">
+                         <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                      </button>
+                      <button id="show">
+                          <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                      </button>
+                    </div>
+                </div>
+                <div class="item__img"><a href="#"><img src="./public/Products/1616154785bx80-3802_2.Wz70i.jpg" alt=""></a></div>
+                <div class="item__name">Pozan "Eraser" BX80-3802 </div>
+                <div class="item__price">0.10 Azn</div>
+                <div class="item__button"><button>Səbətə at</button></div>
+        </div>
+        <div class="office__page__item item col-12 col-md-6 col-xl-4">
+            <div class="item__header">
+               <div class="item__header__right">
+                  <button id="hide">
+                     <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                  </button>
+                  <button id="show">
+                      <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                  </button>
+                </div>
+            </div>
+            <div class="item__img"><a href="#"><img src="./public/Products/1617868605ol-2280.zWM3j.jpg" alt=""></a></div>
+            <div class="item__name">Karandaş "Ozokul" OL-2280</div>
+            <div class="item__price">0.11 Azn</div>
+            <div class="item__button"><button>Səbətə at</button></div>
+    </div>
+    <div class="office__page__item item col-12 col-md-6 col-xl-4">
+        <div class="item__header">
+           <div class="item__header__right">
+              <button id="hide">
+                 <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+              </button>
+              <button id="show">
+                  <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+              </button>
+            </div>
+        </div>
+        <div class="item__img"><a href="#"><img src="./public/Products/1634130433a011626_1_qelem_a_1775_06mm_mavi-1000x1000.jpg" alt=""></a></div>
+        <div class="item__name">Qələm 0.7 mm "Assis" A-1775</div>
+        <div class="item__price">0.12</div>
+        <div class="item__button"><button>Səbətə at</button></div>
+    </div>
+    <div class="office__page__item item col-12 col-md-6 col-xl-4">
+       <div class="item__header">
+           <div class="item__header__right">
+              <button id="hide">
+                 <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+              </button>
+              <button id="show">
+                 <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+              </button>
+           </div>
+       </div>
+       <div class="item__img"><a href="#"><img src="./public/Products/1616154772ol-6060_2.wltS7.jpg"" alt=""></a></div>
+       <div class="item__name">Pozan "Ozokul" OL-6060</div>
+       <div class="item__price">0.15 Azn</div>
+       <div class="item__button"><button>Səbətə at</button></div>
+   </div>
+   <div class="office__page__item item col-12 col-md-6 col-xl-4">
+    <div class="item__header">
+        <div class="item__header__right">
+           <button id="hide">
+              <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+           </button>
+           <button id="show">
+              <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+           </button>
+        </div>
+    </div>
+    <div class="item__img"><a href="#"><img src="./public/Products/163609850781wkKQ31iPS._AC_SL1500_2048x2048.jpg" alt=""></a></div>
+    <div class="item__name">Rəngli qələm 1.0mm "Cello" </div>
+    <div class="item__price">0.20 Azn <del>0.25 Azn</del></div>
+    <div class="item__button"><button>Səbətə at</button></div>
+    </div>
+    <div class="office__page__item item col-12 col-md-6 col-xl-4">
+        <div class="item__header">
+            <div class="item__header__right">
+               <button id="hide">
+                  <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+               </button>
+               <button id="show">
+                  <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+               </button>
+            </div>
+        </div>
+        <div class="item__img"><a href="#"><img src="./public/Products/1617868230i-250.lMyx8.jpg" alt=""></a></div>
+        <div class="item__name">Karandaş "Oyal" İ-250  </div>
+        <div class="item__price">0.30</div>
+        <div class="item__button"><button>Səbətə at</button></div>
+        </div>
+        <div class="office__page__item item col-12 col-md-6 col-xl-4">
+            <div class="item__header">
+                <div class="item__header__right">
+                   <button id="hide">
+                      <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                   </button>
+                   <button id="show">
+                      <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                   </button>
+                </div>
+            </div>
+            <div class="item__img"><a href="#"><img src="./public/Products/16474187233609721_4_karandash_chernografitovyj_maped_black_peps_hb_trekhgrannyj_s_lastikom_zatochen.jpg" alt=""></a></div>
+            <div class="item__name">Karandaş "Maped" M-8218 </div>
+            <div class="item__price">0.20 Azn</div>
+            <div class="item__button"><button>Səbətə at</button></div>
+            </div>
+            <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                <div class="item__header">
+                    <div class="item__header__right">
+                       <button id="hide">
+                          <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                       </button>
+                       <button id="show">
+                          <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                       </button>
+                    </div>
+                </div>
+                <div class="item__img"><a href="#"><img src="./public/Products/1617867353a-2500.p5YtW.jpg" alt=""></a></div>
+                <div class="item__name">Karandaş "Assis" A-2500 </div>
+                <div class="item__price">0.20 Azn</div>
+                <div class="item__button"><button>Səbətə at</button></div>
+                </div>
+                <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                    <div class="item__header">
+                        <div class="item__header__right">
+                           <button id="hide">
+                              <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                           </button>
+                           <button id="show">
+                              <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                           </button>
+                        </div>
+                    </div>
+                    <div class="item__img"><a href="#"><img src="./public/Products/1625730024tri-gold.jpg" alt=""></a></div>
+                    <div class="item__name">Qələm 1.0mm "Cello" 1064 </div>
+                    <div class="item__price">2.40 Azn <del>2.82 Azn</del></div>
+                    <div class="item__button"><button>Səbətə at</button></div>
+                    </div>
+                    <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                        <div class="item__header">
+                            <div class="item__header__right">
+                               <button id="hide">
+                                  <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                               </button>
+                               <button id="show">
+                                  <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                               </button>
+                            </div>
+                        </div>
+                        <div class="item__img"><a href="#"><img src="./public/Products/1625730812buro-2.jpg" alt=""></a></div>
+                        <div class="item__name">Qələm 1.0mm "Pensan" 2270 </div>
+                        <div class="item__price">0.23 Azn</div>
+                        <div class="item__button"><button>Səbətə at</button></div>
+                        </div>
+                        <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                            <div class="item__header">
+                                <div class="item__header__right">
+                                   <button id="hide">
+                                      <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                                   </button>
+                                   <button id="show">
+                                      <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                                   </button>
+                                </div>
+                            </div>
+                            <div class="item__img"><a href="#"><img src="./public/Products/1616154749a-066.IM9PV.jpg" alt=""></a></div>
+                            <div class="item__name">Pozan "Assis" A-066 </div>
+                            <div class="item__price">0.25 Azn</div>
+                            <div class="item__button"><button>Səbətə at</button></div>
+                            </div>
+                            <div class="office__page__item item col-12 col-md-6 col-xl-4">
+                                <div class="item__header">
+                                    <div class="item__header__right">
+                                       <button id="hide">
+                                          <img id="hide__icon" src="./public/images/icon/heart-outline.svg" alt="">
+                                       </button>
+                                       <button id="show">
+                                          <img id="show__icon" style="display: none;" src="./public/images/icon/heart-filled.svg" alt="">
+                                       </button>
+                                    </div>
+                                </div>
+                                <div class="item__img"><a href="#"><img src="./public/Products/16502674839972931592242.jpg" alt=""></a></div>
+                                <div class="item__name">Telli Dosya "Qlobox"</div>
+                                <div class="item__price">0.25 Azn</div>
+                                <div class="item__button"><button>Səbətə at</button></div>
+                                </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">...</a>
+        <a href="#">18</a>
+        <a href="#">19</a>
+        <a href="#">&raquo;</a>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+      <footer>
+        <div class="container">
+         <div class="footer__wrapper col-12">
+            <div class="footer__item lg-3 md-12">
+                 <div class="footer__logo"><a href="./index.html"><img src="./public/images/logo/logo-footer.svg" alt=""></a><br>
+                 <div class="footer__social__media">
+                     <a href="https://www.facebook.com/profile.php?id=100066688792341"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.instagram.com/lucky_office_support/?hl=ru"><i class="fa-brands fa-instagram"></i></a>
+                 </div>
+                 </div>
+            </div>
+            <div class="footer__item lg-3 md-12">
+                 <ul>
+                     <u style="color: #fc8410; font-weight: 600;">Kateqoriyalar</u>
+                     <li><a href="./ofis-levazimatlari.html">Ofis ləvazimatları</a></li>
+                     <li><a href="./qida-ve-ickiler.html">Qida və İçkilər</a></li>
+                     <li><a href="#">Təsərrüfat malları</a></li>
+                     <li><a href="#">Elektron avadanlıq</a></li>
+                     <li><a href="#">Dibçək gülləri</a></li>
+                     <li><a href="#">Hədiyyəlik</a></li>
+                     <li><a href="#">Coffee shop</a></li>
+                 </ul>
+            </div>
+            <div class="footer__item lg-3 md-12">
+             <ul>
+                 <u style="color:#fc8410; font-weight: 600;">Menyular</u>
+                 <li><a href="./haqqimizda.html">Haqqımızda</a></li>
+                 <li><a href="./catdirilma.html">Çatdırılma</a></li>
+                 <li><a href="./geri-qaytarilma.html">Geri qaytarılma və dəyişdirmə</a></li>
+                 <li><a href="./elaqe.html">Əlaqə</a></li>
+             </ul>
+           </div>
+           <div class="footer__item lg-3 md-12">
+           <ul>
+             <u style="color: #fc8410; font-weight: 600;">Əlaqə</u>
+             <li>Tel.:(994) 99 832 07 77</li>
+             <li>E-mail:info@los.az</li>
+             <li>Ünvan:Ziya Bünyadov pr, 1965.</li>
+             <li>Çinar Park Biznes Mərkəzi</li>
+           </ul>
+           </div>
+         </div>
+         <hr>
+         <div class="footer__bottom">
+             <div class="footer__bottom__item">© Bütün huquqlar qorunur - <a style="color: #fc8410; text-decoration: none;" href="#"> Lucky Office Support</a></div>
+             <div class="footer__bottom__item">Powered by <a href="https://proton.az/" style="color: #fc8410; text-decoration: none;"> Proton.az</a></div>
+         </div>
+        </div>
+     </footer>
+     <!-- Owl script -->
+    <script src="./jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- End of owl script -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+ </body>

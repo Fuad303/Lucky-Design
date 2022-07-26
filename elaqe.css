@@ -1,0 +1,68 @@
+.contact__wrapper{
+    display: flex;
+    gap: 15px;
+}
+@media(max-width: 991px){
+    .contact__wrapper{
+        display: block;
+    }
+    .contact__item{
+        margin-bottom: 25px;
+    }
+}
+.contact__item{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+.contact__item__text{
+    margin-top: 15px;
+}.mapouter{
+    position:relative;
+    text-align:right;
+    width: 50%;
+    height:400px;
+}
+.location{
+    display: flex;
+    margin-top: 50px;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.location__title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.location__input input{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+.location__right button{
+    background-color: #106853;
+    border: none;
+    width: 100%;
+    color: #f8f8f8;
+    height: 50px;
+    border-radius: 6px;
+}
+.location__right button:hover{
+    background-color:  #fc8410;
+}
+@media (max-width: 911px){
+    .mapouter{
+        width: 100%;
+    }
+    .location{
+        display: block;
+    }
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:400px;
+}.gmap_iframe {
+    height:400px!important;
+}

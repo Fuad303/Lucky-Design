@@ -1,0 +1,116 @@
+.sifaris{
+  display: flex;
+  margin-top: 50px;
+  gap: 15px;
+}
+.hidden__info{
+  display: none;
+}
+td img{
+  width: 100px;
+}
+@media (max-width: 991px){
+  .sifaris{
+    display: block;
+  }
+  .hidden__info{
+    display: block;
+   }
+  thead{
+    display: none;
+  }
+  tbody{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  tbody td{
+    display: block;
+  } 
+  td img{
+    width: 250px;
+  }
+  .large__confirm__button{
+    display: none;
+  }
+  .small__confirm__button{
+    margin-top: 20px;
+    background-color: rgb(200, 35, 51);
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 75px;
+  }
+  .small__confirm__button:hover{
+    background-color: black;
+  }
+}
+
+.product__buy span{
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .product__buy span:hover{
+    color: #fc8410;
+  }
+  .product__buy input{
+    background-color: transparent;
+  }
+  .product__buy button{
+    background-color: #fc8410;
+    border-color: #fc8410;
+    border-radius: 4px;
+    color: #ffff;
+    padding: 5px 8px;  
+}
+thead{
+    font-size: 17px;
+}
+tbody{
+    height: 80px;
+}
+td{
+    vertical-align: middle;
+}
+td input{
+    border: 1px solid #fc8410;
+    width: 50px;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.confirm{
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+.confirm__btn{
+  display: flex;
+  justify-content: center;
+}
+.confirm__button{
+  background-color: #fc8410;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.confirm__button:hover{
+  background-color: #106853;
+}
+.confirm__button a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffff;
+}
+.confirm__button a:hover{
+  color: #ffff;
+}
