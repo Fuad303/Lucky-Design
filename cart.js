@@ -48,30 +48,7 @@
         }
       });
     });
-
-    // // Show totals 
-    //   function showTotals(){
-    //     const total = [];
-    //     const items = document.querySelectorAll(".item__price");
-
-    //     items.forEach(function(item){
-    //         total.push(parseFloat(item.textContent));
-    //     })
-    //     // console.log(total);
-
-    //     const totalMoney = total.reduce(function(total, item){
-    //       total += item;
-    //       return total;
-    //     }, 0);
-    //     const finalMoney = totalMoney.toFixed(1);
-       
-    //     document.getElementById('common__price').textContent = finalMoney;
-    //     // document.querySelector('common__price').textContent = finalMoney;
-    //   }
-    
   })();
-
-
 
   // Top Function  
 var mybutton = document.getElementById("myBtn");
@@ -92,3 +69,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+/* Favourite Icon */
+$(document).ready(function(){
+  $(".like").click(function(){
+    $(this).toggleClass("heart");
+  });
+});

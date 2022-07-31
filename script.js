@@ -11,24 +11,13 @@ function myFunction() {
 /* Category List */
 function myCategoryFunction() {
   var x = document.getElementById("mobile__category");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
+  if (x.style.display === "none") {
     x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
 }
-/* Favourite icon*/ 
-// $(document).ready(function(){
-//   $("#hide").click(function(){
-//     $("#show__icon").show();
-//     $("#hide__icon").hide();
-//   });
-//   $("#show").click(function(){
-//     $("#show__icon").hide();
-//     $("#hide__icon").show();
-//   });
-// });
-
+/* End of Favourite icon */
 /* Owl carousel slider */
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -108,6 +97,3 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 /* End of galery */
-
-
-

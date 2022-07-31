@@ -3,6 +3,10 @@
     transition: 0.2s all;
     font-family: "Montserrat", sans-serif;
 }
+input:focus-visible{
+    border-color: #fc8410;
+    outline: none;
+}
 .nav{
     background: url(./public/images/pattern/leaf-header-1.png) no-repeat;
     background-position: top right;
@@ -39,7 +43,7 @@
 {
     color: black;
 }
-.header__top ul li:hover
+.header__top ul li:hover 
 {
     background-color: #106853;
     border-color: #106853;
@@ -102,10 +106,13 @@ hide:hover + .nav__category
     position: absolute;
     top: -11px;
     right: -10px;
-    padding: 5px 10px;
-    border-radius: 50%;
+    padding: 5px 8px;
+    border-radius: 60%;
     background: red;
     color: white;
+    font-weight: 400;
+    min-height: 20px;
+    min-width: 20px;
 }
 .header__bottom
 {
@@ -225,12 +232,19 @@ hide:hover + .nav__category
 }
 .dropdown:hover .dropdown-content {display: block;}
 .mobile-container,
-.mobile__category__menu{
+.mobile__category__menu, .mobile__category{
     display: none;
 }
 @media  (max-width: 933px){.nav__menu .nav__item a{font-size: 17.5px;}}
 @media  (max-width: 863px){.nav__menu .nav__item a{font-size: 16px;}}
 @media  (max-width: 768px){
+    .nav__logo{
+        display: flex;
+        justify-content: center;
+    }
+    .nav__logo img{
+        width: 100px;
+    }
     .header__top ul li
     {
         border: none;
@@ -368,7 +382,9 @@ hide:hover + .nav__category
 .mobile__nav__icons i{
     font-size: 30px;
 }
-
+.fa-bars{
+    margin-top: 13px;
+}
 .mobile__notification {
     color: white;
     text-decoration: none;
@@ -463,10 +479,11 @@ hide:hover + .nav__category
 }
 .item__info img, .item__img img{
     text-align: center;
-    width: 180px;
+    width: 200px;
     height: 200px;
 }
-.item__info img:hover{
+.item__info img:hover,
+.item__img img:hover{
     width: 220px;
     height: 220px;
     transition: 0.5s all;
@@ -671,12 +688,11 @@ footer{
 }
 .footer__item ul{
     list-style: none;
-    line-height: 2em;
+    line-height: 1.6em;
 }
 .footer__item ul li a{
     text-decoration: none;
     color: black;
-
 }
 .footer__item ul li a::after{
     content: '';
@@ -700,11 +716,25 @@ footer{
         display: block;
         text-align: center;
     }
+    .footer__item{
+        text-align: center;
+    }
+    .footer__item ul{
+        padding-left: 0;
+    }
+    .footer__logo{
+        margin-bottom: 30px;
+    }
+    .footer__logo img{
+        width: 100px;
+    }
     .footer__social__media a{
-        margin-right: 0;
+        margin-right: 10px;
     }
     .footer__bottom{
         display: block;
+        text-align: center;
+        font-size: 15px;
     }
 }
 /* About Styles */
@@ -1012,4 +1042,22 @@ footer{
     display: none;
     background-color: #fc8410;
     color: #FFFF;
+  }  
+  .fa-heart {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fc8410;
+    font-size: 28px;
+    cursor: pointer;
   }
+  .liked {
+    -webkit-text-fill-color: #fc8410;
+    -webkit-text-stroke-width: 1px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .heart i.fa-heart{
+    color: #fc8410;
+    -webkit-text-fill-color: #fc8410;
+  }
+  
