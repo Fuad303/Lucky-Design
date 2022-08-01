@@ -52,6 +52,9 @@ input:focus-visible{
 {
     color: #FFFF;
 }
+.header__middle{
+    overflow: hidden;
+}
 .nav__search form{
     width: 100%;
 }
@@ -232,7 +235,7 @@ hide:hover + .nav__category
 }
 .dropdown:hover .dropdown-content {display: block;}
 .mobile-container,
-.mobile__category__menu, .mobile__category{
+.mobile__category__menu, #mobile__category{
     display: none;
 }
 @media  (max-width: 933px){.nav__menu .nav__item a{font-size: 17.5px;}}
@@ -446,7 +449,7 @@ hide:hover + .nav__category
     background-repeat: no-repeat;
     background-position: left 90%, right 50%;
 }
-.qida{
+.qida__section{
     margin-top: 0;
     padding-bottom: 100px;
 }
