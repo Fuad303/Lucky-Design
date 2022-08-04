@@ -34,7 +34,17 @@
                     <tr>
                     <td><img src="${item.img}" alt=""></td>
                     <td><div class="cart__name"><strong>Məhsul adı: </strong> ${item.name}</div></td>
-                    <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price}</div></td> 
+                    <td>
+                            <div class="product__buy">
+                            <button onclick="decrement()">-</button>
+                            <input class="increment__input" id=demoInput type=number value="1" min=1 max=100>
+                            <button onclick="increment()">+</button>
+                        </div>
+                    </td>
+                    <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price} 
+                    <button onclick="remove(this)" class="large__confirm__button" style="background-color: rgb(200, 35, 51); color: #FFFF; border: none;">X</button>
+                    <button class="hidden__info small__confirm__button">Sil</button>
+                    </div></td> 
                     </tr>
                 </div> <hr>
         `  ;
@@ -44,11 +54,16 @@
 
         cart.insertBefore(cartItem, total);
         alert("Məhsul səbətə əlavə edildi.");
-        showTotals();
-        }
+      }
       });
     });
   })();
+  // All item remove function
+  function  removeFunction() {
+    const element = document.getElementById("cart");
+    element.remove();
+  }
+// End of All item remove function
 
   // Top Function  
 var mybutton = document.getElementById("myBtn");
@@ -61,15 +76,22 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// End of Top Function
 /* Favourite Icon */
 $(document).ready(function(){
   $(".like").click(function(){
     $(this).toggleClass("heart");
   });
 });
+
+
+function remove(el) {
+  var element = el;
+  element.parentElement.parentElement.parentElement.remove();
+}
+
