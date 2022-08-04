@@ -53,6 +53,8 @@ td img{
   }
   .product__buy input{
     background-color: transparent;
+    border: none;
+    border: 1px solid #fc8410;
   }
   .product__buy button{
     background-color: #fc8410;
@@ -60,7 +62,8 @@ td img{
     border-radius: 4px;
     color: #ffff;
     padding: 5px 8px;  
-}
+    border: none;
+  }
 thead{
     font-size: 17px;
 }

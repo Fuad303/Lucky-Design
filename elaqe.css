@@ -50,12 +50,15 @@
 .location__right button:hover{
     background-color:  #fc8410;
 }
-@media (max-width: 911px){
+@media (max-width: 991px){
     .mapouter{
         width: 100%;
     }
     .location{
         display: block;
+    }
+    .location__title{
+        margin-top: 50px;
     }
 }
 .gmap_canvas {

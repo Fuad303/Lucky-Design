@@ -1,6 +1,6 @@
 (function(){
     const cartBtn = document.querySelectorAll('.item__button');
-  
+    var sebet = document.getElementById("sebet__confirm");
     cartBtn.forEach(function(btn){
       btn.addEventListener('click', function(event){  
         // console.log(event.target);
@@ -29,6 +29,7 @@
             const cartItem = document.createElement("div");
             cartItem.classList.add("cart-item");
             
+
             cartItem.innerHTML =  `
             <div class="cart-item">
                     <tr>
@@ -37,12 +38,12 @@
                     <td>
                             <div class="product__buy">
                             <strong>Say:</strong>
-                            <button onclick="decrement()">-</button>
+                            <button onclick="decrement(this)">-</button>
                             <input class="increment__input" id=demoInput type=number value="1" min=1 max=100>
-                            <button onclick="increment()">+</button>
+                            <button onclick="increment(this)">+</button>
                         </div>
                     </td>
-                    <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price} 
+                    <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price}
                     <button onclick="remove(this)" class="large__confirm__button" style="background-color: rgb(200, 35, 51); color: #FFFF; border: none;">X</button>
                     <button onclick="remove(this)" class="hidden__info small__confirm__button">Sil</button>
                     </div></td> 
@@ -55,6 +56,7 @@
 
         cart.insertBefore(cartItem, total);
         alert("Məhsul səbətə əlavə edildi.");
+        sebet.style.display = "block";
       }
       });
     });
@@ -77,7 +79,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -89,10 +90,14 @@ $(document).ready(function(){
     $(this).toggleClass("heart");
   });
 });
-
-
+// Each element remove
 function remove(el) {
   var element = el;
   element.parentElement.parentElement.parentElement.remove();
 }
-
+// Each element remove
+// Mobile Nav Toggle
+function navFunction(x) {
+  x.classList.toggle("change");
+}
+// Mobile Nav Toggle
