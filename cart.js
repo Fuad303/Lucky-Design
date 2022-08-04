@@ -44,7 +44,7 @@
                     </td>
                     <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price} 
                     <button onclick="remove(this)" class="large__confirm__button" style="background-color: rgb(200, 35, 51); color: #FFFF; border: none;">X</button>
-                    <button class="hidden__info small__confirm__button">Sil</button>
+                    <button onclick="remove(this)" class="hidden__info small__confirm__button">Sil</button>
                     </div></td> 
                     </tr>
                 </div> <hr>
