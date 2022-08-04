@@ -36,6 +36,7 @@
                     <td><div class="cart__name"><strong>Məhsul adı: </strong> ${item.name}</div></td>
                     <td>
                             <div class="product__buy">
+                            <strong>Say:</strong>
                             <button onclick="decrement()">-</button>
                             <input class="increment__input" id=demoInput type=number value="1" min=1 max=100>
                             <button onclick="increment()">+</button>
