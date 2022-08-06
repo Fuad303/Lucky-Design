@@ -1,4 +1,5 @@
 (function(){
+ 
     const cartBtn = document.querySelectorAll('.item__button');
     var sebet = document.getElementById("sebet__confirm");
     cartBtn.forEach(function(btn){
@@ -21,35 +22,34 @@
             let finalPrice = price.slice(0).trim();
 
             item.price = finalPrice;
-            // console.log(finalPrice);
-            // console.log(name);
-
-            // console.log(item);
-
+            
             const cartItem = document.createElement("div");
             cartItem.classList.add("cart-item");
             
-
             cartItem.innerHTML =  `
             <div class="cart-item">
                     <tr>
                     <td><img src="${item.img}" alt=""></td>
                     <td><div class="cart__name"><strong>Məhsul adı: </strong> ${item.name}</div></td>
                     <td>
-                            <div class="product__buy">
+                            <span class="product__buy">
                             <strong>Say:</strong>
-                            <button onclick="decrement(this)">-</button>
-                            <input class="increment__input" id=demoInput type=number value="1" min=1 max=100>
-                            <button onclick="increment(this)">+</button>
-                        </div>
+                            <div class="counter">
+                            <button class="down" onClick='decreaseCount(event, this)'>-</button>
+                            <input type="text" value="1" class="increment__input">
+                            <button class="quantityplus" onClick='increaseCount(event, this)'>+</button>
+                            </div>
+                        </span>  
                     </td>
                     <td><div class="cart__price"><strong>Qiymət: </strong> ${item.price}
                     <button onclick="remove(this)" class="large__confirm__button" style="background-color: rgb(200, 35, 51); color: #FFFF; border: none;">X</button>
                     <button onclick="remove(this)" class="hidden__info small__confirm__button">Sil</button>
                     </div></td> 
                     </tr>
-                </div> <hr>
+                    </div> <hr>
         `  ;
+
+        
         // select cart
         const cart = document.getElementById('cart');
         const total = document.querySelector('confirm');
@@ -57,7 +57,7 @@
         cart.insertBefore(cartItem, total);
         alert("Məhsul səbətə əlavə edildi.");
         sebet.style.display = "block";
-      }
+      }   
       });
     });
   })();
@@ -90,6 +90,7 @@ $(document).ready(function(){
     $(this).toggleClass("heart");
   });
 });
+
 // Each element remove
 function remove(el) {
   var element = el;
@@ -101,3 +102,78 @@ function navFunction(x) {
   x.classList.toggle("change");
 }
 // Mobile Nav Toggle
+
+
+// Increment and decrement
+function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
+// Increment and decrement
+
+$(function() {
+   $('.quantityplus').click(function(e){
+      e.preventDefault();
+      fieldName = $(this).attr('field');
+
+      //Fetch qty in the current elements context and since you have used class selector use it.
+      var qty = $(this).closest('.cart_item').find('.quantity');
+      //var qty = $(this).closest('tr').find('input[name='+fieldName+']');
+
+      var currentVal = parseInt(qty.val());
+      if (!isNaN(currentVal)) {
+          qty.val(currentVal + 1);
+      } else {
+          qty.val(0);
+      }
+ 
+      //Trigger change event
+      qty.trigger('change');
+  });
+
+  $(".quantityminus").click(function(e) {
+      e.preventDefault();
+      fieldName = $(this).attr('field');
+
+      //Fetch qty in the current elements context and since you have used class selector use it.
+      var qty = $(this).closest('.cart_item').find('.quantity');
+      //var qty = $(this).closest('tr').find('input[name='+fieldName+']');
+
+      var currentVal = parseInt(qty.val());
+      if (!isNaN(currentVal) && currentVal > 0) {
+          qty.val(currentVal - 1);
+      } else {
+          qty.val(0);
+      }
+
+      //Trigger change event
+      qty.trigger('change');
+  });     
+
+  //Bind the change event
+  $(".quantity").change(function() {
+      var sum = 0;
+      var total = 0;
+      $('.actual_price').each(function () {
+          var price = $(this);
+          var count = price.closest('.cart_item').find('.quantity');
+          sum = (price.html() * count.val());
+          total = total + sum;
+          price.closest('.cart_item').find('.item_price').html(sum + "₴");
+      });
+      $('.total_price').html("<h3>£" + total + "</h3>");
+
+  }).change(); //trigger change event on page load
+});
