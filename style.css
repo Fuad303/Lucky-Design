@@ -270,10 +270,10 @@ hide:hover + .nav__category
 .mobile__category__menu, #mobile__category{
     display: none;
 }
-@media  (max-width: 991px){.nav__menu .nav__item a{font-size: 16px;}}
-@media  (max-width: 933px){.nav__menu .nav__item a{font-size: 15px;}}
-@media  (max-width: 859px){.nav__menu .nav__item a{font-size: 14px;}}
-@media  (max-width: 813px){.nav__menu .nav__item a{font-size: 12px;}}
+@media  (max-width: 991px){.nav__menu .nav__item a{font-size: 16px;} .nav__menu{gap: 15px;}}
+@media  (max-width: 933px){.nav__menu .nav__item a{font-size: 15px;} .nav__menu{gap: 12px;}}
+@media  (max-width: 859px){.nav__menu .nav__item a{font-size: 14px;} .nav__menu{gap: 10px;}}
+@media  (max-width: 813px){.nav__menu .nav__item a{font-size: 12px;} .nav__menu{gap: 7px;}}
 @media  (max-width: 768px){
     .nav__logo{
         display: flex;
