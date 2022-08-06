@@ -171,9 +171,9 @@ $(function() {
           var count = price.closest('.cart_item').find('.quantity');
           sum = (price.html() * count.val());
           total = total + sum;
-          price.closest('.cart_item').find('.item_price').html(sum + "₴");
+          price.closest('.cart_item').find('.item_price').html(sum + "₼");
       });
-      $('.total_price').html("<h3>£" + total + "</h3>");
+      $('.total_price').html("<h3>₼" + total + "</h3>");
 
   }).change(); //trigger change event on page load
 });

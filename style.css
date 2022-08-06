@@ -1097,6 +1097,8 @@ footer{
   .subnav-content {
     display: none;
     position: absolute;
+    min-height: 100%;
+    top: 50px;
     margin-left: 390px;
     background-color: #FFFF;
     color: black;
